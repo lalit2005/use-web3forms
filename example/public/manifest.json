@@ -1,0 +1,8 @@
+{
+  "short_name": "use-web3forms",
+  "name": "use-web3forms",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
