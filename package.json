@@ -5,6 +5,13 @@
   "author": "Lalit2005",
   "license": "MIT",
   "repository": "Lalit2005/use-web3forms",
+  "keywords": [
+    "form",
+    "react-forms",
+    "form-hook",
+    "hooks",
+    "form-submission"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
