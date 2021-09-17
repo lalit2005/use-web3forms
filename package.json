@@ -10,7 +10,9 @@
     "react-forms",
     "form-hook",
     "hooks",
-    "form-submission"
+    "form-submission",
+    "use-web3forms",
+    "web3forms"
   ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -31,7 +33,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^16.9.0"
+    "react": "^17.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
