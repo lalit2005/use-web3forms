@@ -1,4 +1,12 @@
-const useWeb3forms = <T extends {}>(apikey: string) => {
+const useWeb3forms = <T extends {}>({
+  apikey,
+  onSuccess,
+  onError,
+}: {
+  apikey: string;
+  onSuccess: (successMessage: string) => void;
+  onError: (errorMessage: string) => void;
+}) => {
   const submit = async (formData: T) => {
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -11,7 +19,11 @@ const useWeb3forms = <T extends {}>(apikey: string) => {
       }),
     });
     const data = await response.json();
-    return data;
+    if (data.success === true) {
+      onSuccess(data.message);
+    } else {
+      onError(data.message);
+    }
   };
   return {
     submit,
