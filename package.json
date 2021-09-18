@@ -1,7 +1,7 @@
 {
   "name": "use-web3forms",
   "version": "1.1.0",
-  "description": "Recieve form submissions directly to your inbox without any cofiguration. Powered by Web3forms. Integrates with react-hook-form and other form too!",
+  "description": "Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form too!",
   "author": "Lalit2005",
   "license": "MIT",
   "repository": "Lalit2005/use-web3forms",
@@ -16,7 +16,7 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "jsnext:main": "dist/index.es.js",
   "engines": {
     "node": ">=8",
