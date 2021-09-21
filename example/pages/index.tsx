@@ -10,11 +10,11 @@ const Home: NextPage = () => {
     isWorking: boolean | "Probably";
   }>({
     apikey: "YOUR_ACCESS_KEY_HERE",
-    onSuccess: (data) => {
-      alert(JSON.stringify(data));
+    onSuccess: (successMessage, data) => {
+      alert(JSON.stringify({ successMessage, data }));
     },
-    onError: (error) => {
-      alert(JSON.stringify(error));
+    onError: (errorMessage, data) => {
+      alert(JSON.stringify({ errorMessage, data }));
     },
   });
 
