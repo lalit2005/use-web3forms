@@ -24,7 +24,8 @@
     "prepublish": "yarn build",
     "build": "rimraf dist && microbundle --jsx React.createElement --compress --no-sourcemap",
     "test": "jest",
-    "dev": "yarn build && microbundle watch -o dist/ --no-sourcemap --no-compress --jsx React.createElement"
+    "dev": "yarn build && microbundle watch -o dist/ --no-sourcemap --no-compress --jsx React.createElement",
+    "format": "prettier --write 'src/**/*.{js,ts,tsx,jsx,json,md}'"
   },
   "dependencies": {},
   "peerDependencies": {
