@@ -11,7 +11,9 @@
     "hooks",
     "form-submission",
     "use-web3forms",
-    "web3forms"
+    "web3forms",
+    "react-hook",
+    "react-hook-form"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.modern.js",
@@ -25,7 +27,8 @@
     "build": "rimraf dist && microbundle --jsx React.createElement --compress --no-sourcemap",
     "test": "jest",
     "dev": "yarn build && microbundle watch -o dist/ --no-sourcemap --no-compress --jsx React.createElement",
-    "format": "prettier --write 'src/**/*.{js,ts,tsx,jsx,json,md}'"
+    "format": "prettier --write 'src/**/*.{js,ts,tsx,jsx,json,md}'",
+    "prepare": "husky install"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -42,7 +45,7 @@
     "@types/jest": "^26.0.21",
     "@types/react": "^16.9.53",
     "babel-jest": "^26.6.3",
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^26.6.3",
     "microbundle": "^0.12.3",
