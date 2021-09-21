@@ -4,7 +4,6 @@
   "description": "Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form too!",
   "author": "Lalit2005",
   "license": "MIT",
-  "repository": "Lalit2005/use-web3forms",
   "keywords": [
     "form",
     "react-forms",
@@ -14,47 +13,44 @@
     "use-web3forms",
     "web3forms"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.modern.js",
+  "types": "./dist/index.d.ts",
+  "source": "./src/index.tsx",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c && tsc -d --emitDeclarationOnly --noEmit false --declarationDir dist",
-    "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "prepublish": "yarn build",
+    "build": "rimraf dist && microbundle --jsx React.createElement --compress --no-sourcemap",
+    "test": "jest",
+    "dev": "yarn build && microbundle watch -o dist/ --no-sourcemap --no-compress --jsx React.createElement"
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^17.0.0"
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/runtime": "^7.3.1",
-    "@rollup/plugin-babel": "^5.2.0",
-    "@rollup/plugin-commonjs": "^15.0.0",
-    "@rollup/plugin-node-resolve": "^9.0.0",
-    "@rollup/plugin-typescript": "^5.0.2",
-    "@rollup/plugin-url": "^5.0.1",
-    "@testing-library/react-hooks": "^3.2.1",
-    "@types/jest": "^23.3.13",
-    "@types/react": "^16.7.22",
-    "cross-env": "^5.2.0",
-    "gh-pages": "^2.0.1",
-    "np": "^7.5.0",
-    "react": "^16.9.0",
-    "react-scripts": "^3.4.0",
-    "react-test-renderer": "^16.9.0",
-    "rollup": "^2.26.9",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "tslib": "^2.0.1",
-    "typescript": "^3.2.4"
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^26.0.21",
+    "@types/react": "^16.9.53",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "microbundle": "^0.12.3",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lalit2005/use-web3forms.git"
   }
 }
