@@ -1,6 +1,6 @@
 {
   "name": "use-web3forms",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form libs too!",
   "author": "Lalit2005",
   "license": "MIT",
