@@ -1,1 +1,145 @@
-# Use Web3forms
+
+![Web3forms](https://web3forms.com/img/web3forms-logo.svg)
+# Web3forms react hook 📦
+
+Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form too!
+
+[![NPM](https://img.shields.io/npm/v/use-web3forms.svg)](https://www.npmjs.com/package/use-web3forms)
+![Downloads](https://badgen.net/npm/dw/use-web3forms)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![Size without zipping](https://badgen.net/bundlephobia/min/use-web3forms)
+![Size with zipping](https://badgen.net/bundlephobia/minzip/use-web3forms)
+![Zero dependencies](https://badgen.net/bundlephobia/dependency-count/use-web3forms)
+![License](https://badgen.net/npm/license/use-web3forms)
+![Types included](https://badgen.net/npm/types/use-web3forms)
+## Features ✨
+
+✅  Super lightweight  
+✅  Zero dependencies  
+✅  Full Typescript support  
+✅  Easy to use and a simple API  
+✅  Works with any form libraries  
+✅  Examples provided  
+✅  No configuration required (except for the API key)  
+✅  Works in Node.js (non-browser) environment too ✌️
+
+## Demo
+
+https://use-web3forms.netlify.app/
+
+☝️ useWeb3forms + React hook form. See the code [here](https://github.com/lalit2005/use-web3forms/tree/master/examples/react-hook-form)
+
+## Installation
+
+
+```bash
+npm i use-web3forms
+```
+And for yarn users👇
+```bash
+yarn add use-web3forms
+```
+    
+## Usage 📖
+
+### Javascript
+
+```js
+const { submit } = useWeb3forms({
+  apikey: "YOUR_ACCESS_KEY_HERE",
+  onSuccess: (successMessage, data) => {
+    console.log(successMessage, data)
+  },
+ onError: (errorMessage, data) => {
+    console.log(errorMessage, data)
+  },
+});
+```
+then just provide the data to be submitted to `submit` function
+
+```jsx {3-6}
+<button
+  onClick={(e) => {
+    submit({
+      hello: "world",
+      isWorking: "Yesss!!!",
+    });
+  }}>
+    Submit form
+</button>
+```
+---  
+
+### Typescript
+
+```js
+interface FormData {
+    hello: string;
+    isWorking: boolean | "Probably";
+}
+
+const { submit } = useWeb3forms<FormData>({
+    apikey: "YOUR_ACCESS_KEY_HERE",
+    onSuccess: (successMessage, data) => {
+      console.log(successMessage, data)
+    },
+    onError: (errorMessage, data) => {
+      console.log(errorMessage, data)
+    },
+});
+```
+
+```jsx
+<button
+  onClick={(e) => {
+    submit({
+      hello: "world",
+      isWorking: "Yesss!!!",
+  });
+}}>
+  Submit form
+</button>
+```
+
+> Make sure you provide a json with atleast one key-value pair to `submit`
+
+For other examples please look into the examples directory. If you cannot find your favourite library, just open a issue or just make a tiny contribution 😉
+
+---
+## FAQ ❓
+
+#### Should I have a Web3forms account to use this library?  
+You should get your API key from [Web3forms](https://web3forms.com/) which requires your email.
+
+#### How many form submissions can I make?  
+Web3forms has a generous free plan. You can view the latest pricing [here](https://web3forms.com/#pricing)
+## Run Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/Lalit2005/use-web3forms.git
+```
+
+Go to the project directory
+
+```bash
+cd use-web3forms
+```
+
+Install dependencies
+
+```bash
+yarn
+```
+
+Start the server
+
+```bash
+yarn dev
+```
+`yarn dev` first builds the project so that the type definitions are emitted to `dist` and then `microbundle` starts watching for file changes.
+
+
+
+  
