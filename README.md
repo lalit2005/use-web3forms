@@ -103,7 +103,7 @@ const { submit } = useWeb3forms<FormData>({
 
 > Make sure you provide a json with atleast one key-value pair to `submit`
 
-For other examples please look into the examples directory. If you cannot find your favourite library, just open a issue or just make a tiny contribution 😉
+For other examples please look into the [examples](https://github.com/Lalit2005/use-web3forms/tree/master/examples/) directory. If you cannot find your favourite library/framework, just open a issue or just make a tiny contribution 😉
 
 ---
 ## FAQ ❓
