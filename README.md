@@ -1,5 +1,5 @@
 
-![Web3forms](https://web3forms.com/img/web3forms-logo.svg)
+[![Web3forms](https://web3forms.com/img/web3forms-logo.svg)](https://web3forms.com/)
 # Web3forms react hook 📦
 
 Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form too!
@@ -17,10 +17,10 @@ Recieve form submissions directly to your inbox without any configuration. Power
 ✅  Super lightweight  
 ✅  Zero dependencies  
 ✅  Full Typescript support  
-✅  Easy to use and a simple API  
+✅  Easy to use and a simple Access key  
 ✅  Works with any form libraries  
 ✅  Examples provided  
-✅  No configuration required (except for the API key)  
+✅  No configuration required (except for the Access key)  
 ✅  Works in [Node.js](https://github.com/Lalit2005/use-web3forms/tree/master/examples/with-node.js) (non-browser) environment too ✌️
 
 ## Demo
@@ -31,6 +31,7 @@ https://use-web3forms.netlify.app/
 
 ## Installation
 
+First get your Web3forms access from [here](https://web3forms.com/#start). And then👇
 
 ```bash
 npm i use-web3forms
@@ -39,7 +40,8 @@ And for yarn users👇
 ```bash
 yarn add use-web3forms
 ```
-    
+> Also please do note that the Web3forms Access key can be shared in public (just like the firebase keys).
+
 ## Usage 📖
 
 ### Javascript
@@ -109,7 +111,7 @@ For other examples please look into the [examples](https://github.com/Lalit2005/
 ## FAQ ❓
 
 #### Should I have a Web3forms account to use this library?  
-You should get your API key from [Web3forms](https://web3forms.com/) which requires your email.
+You should get your Access key from [Web3forms](https://web3forms.com/) which requires your email.
 
 #### How many form submissions can I make?  
 Web3forms has a generous free plan. You can view the latest pricing [here](https://web3forms.com/#pricing)
