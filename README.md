@@ -2,7 +2,7 @@
 [![Web3forms](https://web3forms.com/img/web3forms-logo.svg)](https://web3forms.com/)
 # Web3forms react hook 📦
 
-Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form too!
+Recieve form submissions directly to your inbox without any configuration. Powered by Web3forms. Integrates with react-hook-form and other form libraries too!
 
 [![NPM](https://img.shields.io/npm/v/use-web3forms.svg)](https://www.npmjs.com/package/use-web3forms)
 ![Downloads](https://badgen.net/npm/dw/use-web3forms)
