@@ -48,7 +48,7 @@ const Home: NextPage = () => {
         />
         <hr />
         <h2>
-          Fill out this demo 👇 form an recieve an email. Don&apos;t forget to
+          Fill out this demo 👇 form and recieve an email. Don&apos;t forget to
           fill the API key above ☝️
         </h2>
         <form>
